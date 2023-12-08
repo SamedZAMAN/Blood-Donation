@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanBagisiLogin</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  <!-- for icaons -->
+    <script src="js/table.js"></script>
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+</head>
+<body>
+<body>
+
+    
+    <section id="header">
+        <div class="div">
+            <a href="#"><img src="logo.png" alt=""  ></a>
+            <a href="#" class="logoyazi"><span style="color: white;">GAZİ</span><br>Kan Bankası</a>
+        </div>
+        
+        <!-- kurtulan kişilerin sayısı ve kurtulduktan önceki ve sonraki halleri konulacak -->
+        
+
+        <ul style="display:flex; ">
+            <li style="margin-top:18px; "><a href="index.php" style= "color:white; font-size:3rem; margin-top:20px; margin-right:40px; padding:6px; border:2px solid white; border-radius:10px ">Ana Sayfa</a></li>
+            <li><i class="material-icons" style = "color :white; font-size: 6rem; margin-top:5px; cursor:pointer; border:1px solid #fff; border-radius:50%;">account_circle</i>  
+                <ul class="user">
+                    <li class="userName"><a href="#"><?= htmlspecialchars($user["name"]) ?></a></li>
+                    <li><a href="logout.php">Log Out</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>  
+
+    <div class="clearfix">a</div>
+
+
+    <section id="page-container">
+        <div class="navbar">
+            <ul>
+                <li><i class="material-icons" style = "font-size:5rem;">face</i><a href="personal.php">Personal Inf</a></li>
+                <li><i class="material-icons" style = "font-size:5rem;">local_activity</i><a href="raffel.php">Raffel</a></li>
+                <li><i class="material-icons" style = "font-size:5rem;">bloodtype</i><a href="index.php">Donate</a></li>
+            </ul>
+        </div>
+
+        <div class="table">
+            <form action="">
+                
+                <div class="blood_table">
+                    <table border="1">
+                        <caption><span style="font-size: 3rem; padding: 1px 14px;  border-radius: 10px; font-weight: bold;">TABLE of Stock</span></caption>
+                        <tr>
+                            <button class = zbutton; id="" style="font-size:3rem; padding:3px; border-radius:10px;">0</button>
+                            <th>Blood Type</th>
+                            <th>A+</th>
+                            <th>A-</th>
+                            <th>B+</th>
+                            <th>B-</th>
+                            <th>AB+</th>
+                            <th>AB-</th>
+                            <th>0+</th>
+                            <th>0-</th>
+                        </tr>
+                        <tr>
+                            <th>Blood Stock</th>
+                            <td>$user['unit']</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>5</td>
+                        </tr>
+                        <div id="tasks">
+                            <tr id="">
+                                <th>Your Request</th>
+                                <td colspan="7"><textarea name="tableMassage" id="tableMassage" cols="30" rows="5" style="width: 90%;"></textarea></td>
+                                <td><button style="font-size: 3rem; padding: 4px; cursor: pointer; ">Send</button></td>
+                                <td>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/jvucoldz.json"
+                                        trigger="hover"
+                                        style="width:250px;height:250px">
+                                    </lord-icon></td>
+                            </tr>
+                        </div>
+                    </table>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+
+
+
+</body>
+</body>
+
+
+</html>

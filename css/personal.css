@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+:root{
+    --main-color : #c21019;
+    --bacground : rgb(255, 255, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    transition: .2s ease;
+    font-style: 'Anton', sans-serif;
+}
+
+
+html{
+    font-family: 'Tajawal', sans-serif;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 1rem;
+}
+
+body{
+    background: rgb(232, 224, 209);
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 2.4rem;    
+}
+
+span{
+    color: #c21019;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+.block{
+    display: block;
+}
+
+#header{
+    background-color: var(--main-color);
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    text-transform: uppercase;
+    z-index: 1000;
+    max-height: 120px;
+
+}
+
+#header .div{
+    display: flex;
+    padding: 4px;
+    border-right: 1px solid wheat;
+    max-height: 114px;
+}
+
+#header img{
+        box-shadow: 5px 5px 5px rgb(74, 16, 16);
+        width: 70px;
+        background-color: white;
+        padding: 1px;
+        border-radius: 50%;
+}
+
+#header .logoyazi{
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-right: 300px;
+    border-bottom: 1.2px white solid;
+}
+
+#header ul li ul{
+    display: none;
+}
+
+#header ul li:hover ul{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    display:block;
+    right: 70px;
+    top: 80px;
+    position:absolute;
+    background-color: #c21019;
+    padding: 20px 20px 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#header ul li ul .userName{
+    margin-top: 12px;
+}
+
+#header ul li ul li{
+    margin-bottom: 30px;
+    z-index: 100;
+}
+
+#header ul li ul li a{
+    color: black;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    background-color: #fff;
+}
+
+#header ul li ul li:hover a{
+    border: 3px solid black;
+}
+
+
+.clearfix{
+    height: 100px;
+}
+
+
+#page-container{
+    width: 100%;
+    background: rgb(232, 224, 209);
+    margin-top: 5px;
+    display: flex;
+}
+
+#page-container .navbar{
+    font-size: 2rem;
+    height: 1000px;
+    width: 20%;
+    background-color: #fff;
+}
+
+
+#page-container .navbar ul li{
+    border: 10px;
+    align-items: center;
+    align-content: center;
+    transition-delay: 2s ease;
+}
+
+#page-container .navbar ul li:hover{
+    border: 1px solid #c21019;
+}
+
+#page-container .navbar i{
+    padding: 5px;
+    font-size: 5rem;
+}
+
+#page-container .navbar a{
+    color: black;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 15px;
+}
+
+
+
+
+#page-container .container{
+    margin-left: 10px;
+    width: 50%;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+
+
+  
+@media screen and (max-width: 900px){
+    
+    #header .logoyazi{
+        color:#fff;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        margin-right: 300px;
+        border-bottom: 1.2px white solid;
+    }
+
+    
+    #page-container .navbar{
+        font-size: 1.3rem;
+        height: 1000px;
+        width: 20%;
+        background-color: #fff;
+    }
+
+}
+
+
+@media screen and (max-width: 720px){
+    #page-container .navbar ul li a{
+        display: none;
+    }
+}
+  

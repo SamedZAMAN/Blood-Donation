@@ -1,0 +1,51 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="/js/validation.js" defer></script>
+</head>
+<body>
+    <div class="center">
+        <h1>SignUp</h1>
+        <form method="POST" action="process-singup.php" id="signup" novalidate>
+            <div class="txt_field">
+                <input type="text"  name="name" id = "name" required>
+                <span></span>
+                <label for = "username">Username</label>
+            </div>
+
+            <div class="txt_field">
+                <input type="email" required name="email" id= "email">
+                <span></span>
+                <label for = "email">email</label>
+            </div>
+
+            <div class="txt_field">
+                <input type="password" required name="password" id="password">
+                <span></span>
+                <label>Password</label>
+            </div>
+
+            <div class="txt_field">
+                <input type="password" required name="password_confirmation" id="password_confirmation">
+                <span></span>
+                <label>Password Repeat</label>
+            </div>
+            <div class="pass"><a href="main2.html" style="text-decoration: none; color: red;">Come Back Main Page?</a></div>
+            <input type="submit" value="SingUp">
+            <div class="div" style="height: 30px;"></div> 
+
+        </form>
+    </div>
+
+
+</body>
+</html>

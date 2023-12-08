@@ -1,0 +1,97 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    transition: .2s ease;
+    font-style: 'Anton', sans-serif;
+}
+
+body{
+    background: linear-gradient(rgb(255, 211, 211),rgb(255, 255, 255));
+    height: 200vh;
+}
+
+h1{
+    font-size: 4rem;
+    color: black;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 2rem;    
+}
+
+#header{
+    background-color: rgb(152, 8, 8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    text-transform: uppercase;
+    z-index: 1000;
+}
+
+
+#header img{
+    box-shadow: 5px 5px 5px rgb(74, 16, 16);
+    width: 70px;
+    padding: 1px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#header .logoyazi{
+    color: #fff;
+    font-size: 1.4rem;
+    margin-right: 300px;
+    border-bottom: 1.2px white solid;
+
+}
+
+#header .logoyazi span{
+    font-size: 1.7rem;
+}
+
+#header ul li{
+    color:#fff;
+    font-size: rem;
+}
+
+#header ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+#header ul li a:hover{
+    color: rgb(61, 59, 59);
+}
+
+#header ul li a{
+    margin: 1rem;
+    color: #fff;
+    padding: 16px;
+    border-radius: .7em;
+}
+
+
+
+#giris{
+    margin-top: 200px;
+}
+
+#giris .box-container{
+    padding: 20px 40px;
+}
